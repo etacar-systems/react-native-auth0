@@ -158,7 +158,7 @@ UIBackgroundTaskIdentifier taskId;
         #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
         if (@available(iOS 13.0, *)) {
             authenticationSession.presentationContextProvider = self;
-            authenticationSession.prefersEphemeralWebBrowserSession = ephemeralSession;
+            authenticationSession.prefersEphemeralWebBrowserSession = YES;
         }
         #endif
         self.authenticationSession = authenticationSession;
